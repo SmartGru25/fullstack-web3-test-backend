@@ -42,10 +42,9 @@ To build and run the project, run:
 ```
 yarn build
 
-yarn migrations
-
 yarn start
 ```
+You should first migrate database and create at least one record (secret message).
 
 ## Technologies Used
 
