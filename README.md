@@ -1,6 +1,6 @@
-# Sample Polkadot Wallet Backend API
+# Polkadot Wallet Sign-In Backend API
 
-This is a backend API for a sample Polkadot wallet sign-in frontend application. This uses polkadot.js to verify signatures in requests coming from the frontend. The API also returns a random secret message encrypted with Polkadot encrypt functions to only authorized users. The secret messages would be stored in a SQLite database currently.
+This is a backend API for a sample Polkadot wallet sign-in frontend application. This uses polkadot.js to verify signatures in requests coming from the frontend. The API also returns a random secret message encrypted with Polkadot encrypt functions to only authenticated users. The secret messages would be stored in a SQLite database currently.
 
 ## Prerequisites
 
@@ -41,6 +41,8 @@ To build and run the project, run:
 
 ```
 yarn build
+
+yarn migrations
 
 yarn start
 ```
